@@ -1,6 +1,6 @@
-const API="https://ecommercestore-v655.onrender.com/api/"
+const API="https://ashwinreddy6694.pythonanywhere.com/api/"
 export const BANNER_API = API+"homeimages/?category=banner";
-export const BROWSE_BY_CATEGORY="https://ecommercestore-v655.onrender.com/media/products/";
+export const BROWSE_BY_CATEGORY="https://ashwinreddy6694.pythonanywhere.com/media/products/";
 export const LOGIN_API=API+"login/";
 export const REGISTER_API=API+"auth/";
 export const CART_API_URL=API+"cart/";
