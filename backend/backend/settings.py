@@ -15,7 +15,10 @@ SECRET_KEY = 'django-insecure-t169#9o@4c-ihi!*#2z1&7y$^9*+ljm@i$pub&6g$ag7ilam1s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "suvecommerce.vercel.app",
+    "ecommercestore-v655.onrender.com"
+]
 
 # Application definition
 INSTALLED_APPS = [
@@ -121,10 +124,15 @@ REST_FRAMEWORK = {
 TOKEN_EXPIRY_DURATION = 43200
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "https://suvecommerce.vercel.app",
+    "https://ecommercestore-v655.onrender.com"
 ]
 
 CORS_ALLOW_CREDENTIALS = True 
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://ecommercestore-v655.onrender.com",
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
